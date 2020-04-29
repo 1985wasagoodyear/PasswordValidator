@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FEF991724591E9B009E1ECB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF991624591E9B009E1ECB /* main.swift */; };
+		3FEF992024591F63009E1ECB /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF991F24591F63009E1ECB /* PasswordValidator.swift */; };
+		3FEF992224592464009E1ECB /* ValidatorOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF992124592464009E1ECB /* ValidatorOptions.swift */; };
+		3FEF99242459247A009E1ECB /* PasswordValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF99232459247A009E1ECB /* PasswordValidationError.swift */; };
+		3FEF992624592653009E1ECB /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF992524592653009E1ECB /* Validators.swift */; };
+		3FEF992E245926BC009E1ECB /* PasswordValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF992D245926BC009E1ECB /* PasswordValidatorTests.swift */; };
+		3FEF993324592740009E1ECB /* ValidatorOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF992124592464009E1ECB /* ValidatorOptions.swift */; };
+		3FEF993424592740009E1ECB /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF992524592653009E1ECB /* Validators.swift */; };
+		3FEF993524592740009E1ECB /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF991F24591F63009E1ECB /* PasswordValidator.swift */; };
+		3FEF993624592740009E1ECB /* PasswordValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF99232459247A009E1ECB /* PasswordValidationError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3FEF991124591E9B009E1ECB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3FEF991324591E9B009E1ECB /* PasswordValidator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PasswordValidator; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FEF991624591E9B009E1ECB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3FEF991F24591F63009E1ECB /* PasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
+		3FEF992124592464009E1ECB /* ValidatorOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorOptions.swift; sourceTree = "<group>"; };
+		3FEF99232459247A009E1ECB /* PasswordValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidationError.swift; sourceTree = "<group>"; };
+		3FEF992524592653009E1ECB /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		3FEF992B245926BC009E1ECB /* PasswordValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FEF992D245926BC009E1ECB /* PasswordValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidatorTests.swift; sourceTree = "<group>"; };
+		3FEF992F245926BC009E1ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FEF991024591E9B009E1ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEF9928245926BC009E1ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FEF990A24591E9B009E1ECB = {
+			isa = PBXGroup;
+			children = (
+				3FEF991524591E9B009E1ECB /* PasswordValidator */,
+				3FEF992C245926BC009E1ECB /* PasswordValidatorTests */,
+				3FEF991424591E9B009E1ECB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FEF991424591E9B009E1ECB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FEF991324591E9B009E1ECB /* PasswordValidator */,
+				3FEF992B245926BC009E1ECB /* PasswordValidatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FEF991524591E9B009E1ECB /* PasswordValidator */ = {
+			isa = PBXGroup;
+			children = (
+				3FEF991624591E9B009E1ECB /* main.swift */,
+				3FEF992124592464009E1ECB /* ValidatorOptions.swift */,
+				3FEF992524592653009E1ECB /* Validators.swift */,
+				3FEF991F24591F63009E1ECB /* PasswordValidator.swift */,
+				3FEF99232459247A009E1ECB /* PasswordValidationError.swift */,
+			);
+			path = PasswordValidator;
+			sourceTree = "<group>";
+		};
+		3FEF992C245926BC009E1ECB /* PasswordValidatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FEF992D245926BC009E1ECB /* PasswordValidatorTests.swift */,
+				3FEF992F245926BC009E1ECB /* Info.plist */,
+			);
+			path = PasswordValidatorTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FEF991224591E9B009E1ECB /* PasswordValidator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FEF991A24591E9B009E1ECB /* Build configuration list for PBXNativeTarget "PasswordValidator" */;
+			buildPhases = (
+				3FEF990F24591E9B009E1ECB /* Sources */,
+				3FEF991024591E9B009E1ECB /* Frameworks */,
+				3FEF991124591E9B009E1ECB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordValidator;
+			productName = PasswordValidator;
+			productReference = 3FEF991324591E9B009E1ECB /* PasswordValidator */;
+			productType = "com.apple.product-type.tool";
+		};
+		3FEF992A245926BC009E1ECB /* PasswordValidatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FEF9930245926BC009E1ECB /* Build configuration list for PBXNativeTarget "PasswordValidatorTests" */;
+			buildPhases = (
+				3FEF9927245926BC009E1ECB /* Sources */,
+				3FEF9928245926BC009E1ECB /* Frameworks */,
+				3FEF9929245926BC009E1ECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordValidatorTests;
+			productName = PasswordValidatorTests;
+			productReference = 3FEF992B245926BC009E1ECB /* PasswordValidatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FEF990B24591E9B009E1ECB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = yu;
+				TargetAttributes = {
+					3FEF991224591E9B009E1ECB = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					3FEF992A245926BC009E1ECB = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 3FEF990E24591E9B009E1ECB /* Build configuration list for PBXProject "PasswordValidator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FEF990A24591E9B009E1ECB;
+			productRefGroup = 3FEF991424591E9B009E1ECB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FEF991224591E9B009E1ECB /* PasswordValidator */,
+				3FEF992A245926BC009E1ECB /* PasswordValidatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FEF9929245926BC009E1ECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FEF990F24591E9B009E1ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FEF991724591E9B009E1ECB /* main.swift in Sources */,
+				3FEF99242459247A009E1ECB /* PasswordValidationError.swift in Sources */,
+				3FEF992024591F63009E1ECB /* PasswordValidator.swift in Sources */,
+				3FEF992624592653009E1ECB /* Validators.swift in Sources */,
+				3FEF992224592464009E1ECB /* ValidatorOptions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEF9927245926BC009E1ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FEF992E245926BC009E1ECB /* PasswordValidatorTests.swift in Sources */,
+				3FEF993624592740009E1ECB /* PasswordValidationError.swift in Sources */,
+				3FEF993324592740009E1ECB /* ValidatorOptions.swift in Sources */,
+				3FEF993424592740009E1ECB /* Validators.swift in Sources */,
+				3FEF993524592740009E1ECB /* PasswordValidator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3FEF991824591E9B009E1ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FEF991924591E9B009E1ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3FEF991B24591E9B009E1ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3FEF991C24591E9B009E1ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3FEF9931245926BC009E1ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PasswordValidatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yu.PasswordValidatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3FEF9932245926BC009E1ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PasswordValidatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yu.PasswordValidatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FEF990E24591E9B009E1ECB /* Build configuration list for PBXProject "PasswordValidator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEF991824591E9B009E1ECB /* Debug */,
+				3FEF991924591E9B009E1ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FEF991A24591E9B009E1ECB /* Build configuration list for PBXNativeTarget "PasswordValidator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEF991B24591E9B009E1ECB /* Debug */,
+				3FEF991C24591E9B009E1ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FEF9930245926BC009E1ECB /* Build configuration list for PBXNativeTarget "PasswordValidatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEF9931245926BC009E1ECB /* Debug */,
+				3FEF9932245926BC009E1ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FEF990B24591E9B009E1ECB /* Project object */;
+}
