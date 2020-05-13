@@ -10,6 +10,10 @@
 
 import Foundation
 
+func readCleanLine() -> String? {
+    readLine()?.trimmingCharacters(in: .whitespacesAndNewlines)
+}
+
 let validators: [ValidatorOptions] = [.isLength(8),
                                       .hasDigit,
                                       .hasUppercase]
@@ -22,7 +26,7 @@ print("Enter a blank line to exit.")
 print("------------------------------------")
 print(">", separator: "", terminator: "")
 
-while let password = readLine() {
+while let password = readCleanLine() {
     guard password.isEmpty == false else { break }
     let result = validator.validate(password)
     switch result {
